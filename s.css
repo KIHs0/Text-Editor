@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #181111;
+  overflow: hidden;
+}
+#name {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 1.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: lightslategray;
+  border-bottom: 0.09rem solid lightslategray;
+}
+
+/* #version{
+  color: lightslategray;
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.text-container {
+  height: 50vh;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #111;
+  overflow: auto;
+}
+.text-container:empty:before {
+  content: "Start typing here...";
+  color: #111;
+}
+
+.container {
+  background-color: #fff;
+  width: 90vmin;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(7, 20, 35, 0.4);
+}
+
+.options {
+  position: relative;
+  top: -10px;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  align-items: center;
+}
+
+button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.options label,
+.options select {
+  font-family: sans-serif, poppins;
+  color: #111;
+  position: relative;
+}
+
+select {
+  border: 0.8px solid black;
+  padding: 2px;
+  cursor: pointer;
+}
+
+input[type="color"] {
+  border: none;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 50px;
+  height: 30px;
+}
+
+label {
+  padding: 4px 8px;
+  display: block;
+  bottom: 6px;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #111;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #111;
+}
+.active {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+/* .script{
+  background-color: yellow;
+}
+.format{
+  background-color: red;
+}
+.spacing{
+  background-color: blue;
+}
+.align{
+  background-color: green;
+} */

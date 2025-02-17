@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TextEditor</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="s.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="options">
+        <div id="name">KIHSO Pad (V-0.1.0)</div>
+        <button class="bold upperrow format" id="bold">
+          <i class="fa-solid fa-bold"></i>
+        </button>
+
+        <button class="script upperrow" id="subscipt">
+          <i class="fa-solid fa-subscript"></i>
+        </button>
+        <button class="script upperrow" id="superscript">
+          <i class="fa-solid fa-superscript"></i>
+        </button>
+        <button class="italic upperrow ft" id="italic">
+          <i class="fa-solid fa-italic"></i>
+        </button>
+        <button class="redo upperrow ft" id="redo">
+          <i class="fa-solid fa-redo"></i>
+        </button>
+        <button class="undo upperrow ft" id="undo">
+          <i class="fa-solid fa-undo"></i>
+        </button>
+        <button class="ulist upperrow ft" id="insertUnorderedList">
+          <i class="fa-solid fa-list-ul"></i>
+        </button>
+        <button class="olist upperrow ft" id="insertOrderedList">
+          <i class="fa-solid fa-list-ol"></i>
+        </button>
+        <button class="rotateleft upperrow ft">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+        <button class="rotateright upperrow ft">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+        <button class="hyperlink upperrow ft" id="createLink">
+          <i class="fa fa-link"></i>
+        </button>
+        <button class="unhyperlink upperrow ft" id="unlink">
+          <i class="fa-solid fa-unlink"></i>
+        </button>
+        <button class="underline upperrow ft" id="underline">
+          <i class="fa-solid fa-underline"></i>
+        </button>
+        <button class="right align upperrow" id="justifyLeft">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+        <button class="left align upperrow" id="justifyRight">
+          <i class="fa-solid fa-align-left"></i>
+        </button>
+        <button class="justify align upperrow" id="justifyFull">
+          <i class="fa-solid fa-align-justify"></i>
+        </button>
+        <button class="center align upperrow" id="justifyCenter">
+          <i class="fa-solid fa-align-center"></i>
+        </button>
+        <button class="indent upperrow spacing" id="indent">
+          <i class="fa-solid fa-indent"></i>
+        </button>
+
+        <button class="outdent upperrow spacing" id="outdent">
+          <i class="fa-solid fa-outdent"></i>
+        </button>
+
+        <!-- -----------lower row -->
+
+        <select id="formatblock" class="lowerrow">
+          <option value="h1">H1</option>
+          <option value="h2">H2</option>
+          <option value="h3">H3</option>
+          <option value="h4">H4</option>
+          <option value="h5">H5</option>
+        </select>
+        <select id="fontsize" class="lowerrow"></select>
+        <select id="fontnamelist" class="lowerrow"></select>
+
+        <div class="inputWrapper lowerrow">
+          <input type="color" id="foreColor" / >
+          <label for="foreColor">Color</label>
+        </div>
+
+        <div class="inputWrapper lowerrow">
+          <input type="color" id="backColor" />
+          <label for="backColor">Highlighter</label>
+        </div>
+      </div>
+      <!-- options div end  -->
+
+      <div id="editor" class="text-container" contenteditable="true"></div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/d31f45cac3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="g.js"></script>
+  </body>
+</html>
