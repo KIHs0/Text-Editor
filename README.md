@@ -14,7 +14,9 @@ KIHSO-pad is a lightweight and feature-rich text editor designed for smooth writ
 - **Backend (if applicable):** Node.js, Express.js  
 - **Storage Options:** LocalStorage / IndexedDB / File System API  
 
-## 📦 Installation & Usage  
+  ![](image.png)
+
+
 
 ### 1️⃣ Clone the Repository  
 ```sh
